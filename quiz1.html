@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!-- Linking to an external CSS file -->
+    <link rel="stylesheet" href="home1.css">
+    <!-- Or you can embed CSS directly -->
+</head>
+<style>
+    body {
+        background-image: url("bg.jpg");
+        background-size: cover; /* or contain, or specify dimensions */
+        background-position: center; /* or specify position */
+        background-repeat: no-repeat;
+    }
+    .logo{
+        background-image: url('https://pnc.edu.ph/wp-content/uploads/2023/03/New-Web-Long.png');
+        width: 100%; /* Adjust the width of the logo as needed */
+        height: 100%; /* Adjust the height of the logo as needed */
+        position: fixed;
+        left: 20px; /* Adjust the left position of the logo as needed */
+        top: 20px; 
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+</style>
+<body>
+    <div class="logo"></div>
+    <div class="quiz-container" id="quiz">
+        <div style="text-align: center;"><a href="index1.html" style="text-decoration: none;;color: black;"><h3>Home</h3></a></div>
+        <div class="quiz-header">
+          <h2 id="question">Quiz</h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer" />
+              <label for="a" id="a_text">Question</label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="b" class="answer" />
+              <label for="b" id="b_text">Question</label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="c" class="answer" />
+              <label for="c" id="c_text">Question</label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="d" class="answer" />
+              <label for="d" id="d_text">Question</label>
+            </li>
+          </ul>
+        </div>
+        <button id="submit">Submit</button>
+      </div>
+      <script src="quiz1.html"></script>
+</body>
+</html>

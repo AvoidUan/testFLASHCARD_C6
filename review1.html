@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!-- Linking to an external CSS file -->
+    <link rel="stylesheet" href="home1.css">
+    <!-- Or you can embed CSS directly -->
+</head>
+<style>
+    body {
+        background-image: url("bg.jpg");
+        background-size: cover; /* or contain, or specify dimensions */
+        background-position: center; /* or specify position */
+        background-repeat: no-repeat;
+    }
+    .logo{
+        background-image: url('https://pnc.edu.ph/wp-content/uploads/2023/03/New-Web-Long.png');
+        width: 100%; /* Adjust the width of the logo as needed */
+        height: 100%; /* Adjust the height of the logo as needed */
+        position: fixed;
+        left: 20px; /* Adjust the left position of the logo as needed */
+        top: 20px; 
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+</style>
+<body>
+    <div class="logo"></div>
+    <div class="quiz-container" id="review">
+        <div style="text-align: center;"><a href="index1.html" style="text-decoration: none;color: black;"><h3>Home</h3></a></div>
+        <div class="quiz-header">
+          <h2 id="question">question</h2>
+        </div>
+        <button id="submit">Next</button>
+      </div>
+      <script src="review1.html"></script>
+</body>
+</html>
