@@ -12,16 +12,12 @@
     <!-- Or you can embed CSS directly -->
 </head>
 <style>
-    html{
-      height: -webkit-fill-available; 
-    }
 
     body {
         background-image: url("bg.jpg");
         background-size: cover; /* or contain, or specify dimensions */
         background-position: center; /* or specify position */
         background-repeat: no-repeat;
-        height: -webkit-fill-available;
     }
     .logo{
         background-image: url('https://pnc.edu.ph/wp-content/uploads/2023/03/New-Web-Long.png');
@@ -32,6 +28,13 @@
         top: 20px; 
         background-repeat: no-repeat;
         z-index: -1;
+    }
+
+    @media only screen and (max-width:400px) {
+        .body, .logo {
+            width: 90%;
+            height; 90%;
+        }
     }
 </style>
 <body>
